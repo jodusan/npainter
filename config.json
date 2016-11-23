@@ -1,0 +1,13 @@
+{
+  "input_folder": "inpt",
+  "output_folder": "out",
+  "learning_rate": "0.001",
+  "num_iterations": "50",
+  "batch_size": "200",
+  "n_neurons": "24",
+  "activation_fn": "relu",
+  "final_activation_fn": "tanh",
+  "make_gifs": "",
+  "gif_step": "99999",
+  "n_layers": "13"
+}
