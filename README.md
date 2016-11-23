@@ -1,16 +1,18 @@
-# README Boilerplate
+# NeuralPainter - npainter
 
-I use this backpack repo for my software engineering adventures!
-Change this readme as needed. Use [Peek](https://github.com/phw/peek) to make gifs for showcase.
+Simple neural network for painting images. It works by using [x,y] coordinates of each pixel from the input image and tries to predict their respective [r,g,b] values. The generated pictures have a look of a hand-painted picture.
 
 ## Installation
 
 Download to your project directory, add it, and commit.
+## Dependencies
+
+* [`python 3.5`](https://docs.docker.com/engine/reference/commandline/rename/) 
+* [`tensorflow`](https://www.tensorflow.org/) Tensorflow library.
+* `matplotlib` updates a container's resource limits.
 
 ```sh
-curl -O https://github.com/christianbundy/readme-boilerplate.md
-git add README.md
-git commit -m "Add README Boilerplate"
+
 ```
 
 ## Usage
