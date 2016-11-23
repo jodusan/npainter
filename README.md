@@ -1,5 +1,5 @@
 # NeuralPainter - npainter
-![BS-Painted](https://media.giphy.com/media/l2JhL7YXCvyO4IaOs/source.gif)
+![BS-Painted](https://giphy.com/gifs/l2JhztKBWefMDSEog)
 
 
 Simple neural network written in tensorflow for painting images. It works by using [x,y] coordinates of each pixel from the input image and tries to predict their respective [r,g,b] values. The generated pictures have a look of a hand-painted picture.
