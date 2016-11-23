@@ -1,32 +1,43 @@
-# README Boilerplate
+# NeuralPainter - npainter
+![BS-Painted](http://i.makeagif.com/media/11-23-2016/qPZho9.gif)
 
-I use this backpack repo for my software engineering adventures!
-Change this readme as needed. Use [Peek](https://github.com/phw/peek) to make gifs for showcase.
 
-## Installation
 
-Download to your project directory, add it, and commit.
+Simple neural network written in tensorflow for painting images. It works by using [x,y] coordinates of each pixel from the input image and tries to predict their respective [r,g,b] values. The generated pictures have a look of a hand-painted picture.
 
-```sh
-curl -O https://github.com/christianbundy/readme-boilerplate.md
-git add README.md
-git commit -m "Add README Boilerplate"
-```
+### Notes
+
+It took me around 18 hours on quadcore i5-4690 to paint 500 frames (20sec) of 720p video with 50 iterations and 13 layers with 24 neurons/layer. It can be seen on this [painted video](https://www.youtube.com/watch?v=4Jc6vNpQo58) & [original video](https://www.youtube.com/watch?v=hkSzmPnzF-o).
+
+## Dependencies
+
+* [`tensorflow`](https://www.tensorflow.org/) Tensorflow library.
+* `python 3.5` 
+* `matplotlib`
+* `numpy`
 
 ## Usage
 
-Edit `README.md` with the name of your project, a description, installation instructions, usage instructions, how to get support, and how people can contribute to your project.
+Usage is configured with config.json file that has to be in the same directory as the npaint.py script. Script will take all .jpg images from the input folder and run for num_iterations on each one before outputing the result. It can be used on videos as well, since you can extract all frames from video with [`ffmpeg`](http://stackoverflow.com/questions/8287759/extracting-frames-from-mp4-flv)
 
-## Support
+### Config options:
 
-none, nada, aucune...
+* `input_folder` path to folder where input images are located
+* `output_folder` folder where to write the output images to
+* `n_neurons` number of neurons per layer
+* `activation_fn` activation function after each hidden layer, "relu" or "tanh" are valid options
+* `final_activation_fn` activation function of the last layer
+* `n_layers` number of layers
+* `batch_size`
+* `num_iterations`
+* `learning_rate` 
 
-## Contributing
+### Running the script
 
-Fork the project, create a new branch, make your changes, and open a pull request.
+```
+   python3 npaint.py 
+```
 
-We use [Clear code](http://introcs.cs.princeton.edu/java/11style/) writing guidelines.
-This tool can convert nicely to pdf [MarkdownToPdf](http://www.markdowntopdf.com/)
 
 # Credits
 
