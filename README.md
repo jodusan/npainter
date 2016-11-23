@@ -2,8 +2,12 @@
 ![BS-Painted](http://i.makeagif.com/media/11-23-2016/qPZho9.gif)
 
 
+
 Simple neural network written in tensorflow for painting images. It works by using [x,y] coordinates of each pixel from the input image and tries to predict their respective [r,g,b] values. The generated pictures have a look of a hand-painted picture.
 
+### Notes
+
+It took me around 18 hours on quadcore i5-4690 to paint 500 frames (20sec) of 720p video with 50 iterations and 13 layers with 24 neurons/layer. It can be seen on this [painted video](https://www.youtube.com/watch?v=4Jc6vNpQo58) & [original video](https://www.youtube.com/watch?v=hkSzmPnzF-o).
 
 ## Dependencies
 
@@ -34,9 +38,7 @@ Usage is configured with config.json file that has to be in the same directory a
    python3 npaint.py 
 ```
 
-### Notes
 
-It took me around 18 hours on quadcore i5-4690 to paint 500 frames (20sec) of 720p video with 50 iterations and 13 layers with 24 neurons/layer. It can be seen on this [painted video](https://www.youtube.com/watch?v=4Jc6vNpQo58) & [original video](https://www.youtube.com/watch?v=hkSzmPnzF-o).
 # Credits
 
 Released under the [MIT License].<br>
