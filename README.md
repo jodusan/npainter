@@ -12,12 +12,12 @@ Simple neural network written in tensorflow for painting images. It works by usi
 
 ## Usage
 
-Usage is configured with config.json file that has to be in the same directory as the npaint.py script.
+Usage is configured with config.json file that has to be in the same directory as the npaint.py script. Script will take all .jpg images from the input folder and run for num_iterations on each one before outputing the result. It can be used on videos as well, since you can extract all frames from video with [`ffmpeg`](http://stackoverflow.com/questions/8287759/extracting-frames-from-mp4-flv)
 
 ### Config options:
 
 * `input_folder` path to folder where input images are located
-* `output_fodler` folder where to write the output images to
+* `output_folder` folder where to write the output images to
 * `n_neurons` number of neurons per layer
 * `activation_fn` activation function after each hidden layer, "relu" or "tanh" are valid options
 * `final_activation_fn` activation function of the last layer
