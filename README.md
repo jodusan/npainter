@@ -3,7 +3,7 @@
 
 
 
-Simple neural network written in tensorflow for painting images. It works by using [x,y] coordinates of each pixel from the input image and tries to predict their respective [r,g,b] values. The generated pictures have a look of a hand-painted picture.
+Simple neural network written in tensorflow for painting images. It works by using [x,y] coordinates of each pixel from the input image as inputs and tries to predict their respective [r,g,b] values. The generated pictures have a look of a hand-painted picture.
 
 ### Notes
 
