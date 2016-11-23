@@ -32,6 +32,9 @@ Usage is configured with config.json file that has to be in the same directory a
    python3 npaint.py 
 ```
 
+### Notes
+
+It took me around 18 hours on quadcore i5-4690 to paint 500 frames (20sec) of 720p video with 50 iterations and 13 layers with 24 neurons/layer. Result can be seen here [painted video](https://www.youtube.com/watch?v=4Jc6vNpQo58) [original video](https://www.youtube.com/watch?v=hkSzmPnzF-o).
 # Credits
 
 Released under the [MIT License].<br>
